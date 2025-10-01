@@ -15,6 +15,10 @@ A desktop application to track monthly expenses and budgets. Built with **JavaFX
 - JavaFX
 - Maven
 
+## Requirements
+- JDK 22 (or JDK 21 + set `javafx.version` to a 21.x release)
+- Maven 3.9+
+
 ## How to Run
 1. Clone the repository:
    ```bash
@@ -26,6 +30,7 @@ A desktop application to track monthly expenses and budgets. Built with **JavaFX
 ## Screenshots
 ![Main Dashboard and Expense Overview](docs/screenshots/MainDashboard-ExpenseOverview.png)
 ![Table of Records](docs/screenshots/TableOfRecords.png)
+Screenshots live in `docs/screenshots/`.
 
 ## Application Walkthrough
 
