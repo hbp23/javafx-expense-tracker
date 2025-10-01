@@ -24,3 +24,34 @@ A desktop application to track monthly expenses and budgets. Built with **JavaFX
 ## Screenshots
 ![Main Dashboard and Expense Overview](docs/screenshots/MainDashboard-ExpenseOverview.png)
 ![Table of Records](docs/screenshots/TableOfRecords.png)
+
+## Application Walkthrough
+
+### Main Application
+- **Top Row**
+  - File: open Table of Records (Alt+T), Expense Overview (Alt+P), or Exit  
+  - Budget: set monthly budget (Alt+B)  
+  - Help: keyboard shortcuts (Alt+H)  
+- **Middle Row**
+  - Left: last month’s balance  
+  - Middle: current month’s balance  
+  - Right: budget progress indicator  
+- **Bottom Row**
+  - Table of Records: view, add, update, delete transactions  
+  - Expense Overview: pie charts by category (monthly and all-time)  
+
+### Table of Records
+- View, sort, and filter transactions (Date, Category, Amount)  
+- Add, edit, delete transactions  
+- Add optional comments  
+- “New” button clears selection  
+
+### Expense Overview
+- Left pie: this month’s expenses by category  
+- Right pie: all-time expenses by category  
+- Both include legends  
+
+---
+
+## License
+MIT License – see [LICENSE](LICENSE) for details.
