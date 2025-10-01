@@ -5,6 +5,7 @@ target/
 
 ### App data ###
 transactions.dat
+.idea/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
