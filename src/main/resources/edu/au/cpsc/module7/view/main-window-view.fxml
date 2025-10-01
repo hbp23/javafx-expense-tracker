@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/main.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.au.cpsc.module7.controller.MainWindowController">
+   <children>
+      <MenuBar styleClass="MenuBar">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#tableOfRecordsButtonAction" text="Table of Records">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="T" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#pieChartButtonAction" text="Expense Overview">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="P" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Budget">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#setBudgetAction" text="Set Monthly Budget">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="B" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#shortcutsPopUpAction" text="Keyboard Shortcuts">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="H" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <BorderPane prefHeight="247.0" prefWidth="600.0">
+         <top>
+            <Label text="Balance Overview" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <BorderPane prefWidth="400.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <Label fx:id="currentMonthLabel" text="This Month" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <TextField fx:id="monthlyBalanceField" maxWidth="150.0" prefHeight="26.0" prefWidth="164.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </center>
+         <left>
+            <BorderPane prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <TextField fx:id="lastMonthlyBalanceField" maxWidth="100.0" prefHeight="26.0" prefWidth="103.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label fx:id="lastMonthLabel" text="Last Month" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </left>
+         <right>
+            <BorderPane prefHeight="191.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <ProgressIndicator fx:id="budgetProgress" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="152.0" prefWidth="140.0" progress="0.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label fx:id="budgetLabel" contentDisplay="CENTER" text="Budget" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </right>
+      </BorderPane>
+      <HBox prefHeight="231.0" prefWidth="600.0">
+         <children>
+            <Button id="leftButton" fx:id="tableOfRecordsButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#tableOfRecordsButtonAction" prefWidth="300.0" text="Table of Records" HBox.hgrow="ALWAYS" />
+            <Button id="rightButton" fx:id="pieChartButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pieChartButtonAction" prefWidth="300.0" text="Expense Overview" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

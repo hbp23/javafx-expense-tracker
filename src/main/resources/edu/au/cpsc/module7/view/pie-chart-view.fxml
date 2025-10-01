@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/piechart.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.au.cpsc.module7.controller.PieChartViewController">
+   <children>
+      <PieChart id="piechartone" fx:id="monthlyPieChart" title="Monthly Expenses" />
+      <PieChart id="piechart2" fx:id="totalPieChart" title="Total Expenses" />
+   </children>
+</HBox>

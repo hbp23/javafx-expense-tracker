@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="2.0" stylesheets="@../style/budget.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.au.cpsc.module7.controller.BudgetPopupViewController">
+   <children>
+      <Label text="Enter Monthly Budget:" />
+      <TextField fx:id="budgetTextField" promptText="Enter Monthly Budget" />
+      <HBox alignment="TOP_RIGHT">
+         <children>
+            <Button id="close-btn" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+            <Button id="apply-btn" mnemonicParsing="false" onAction="#applyButtonAction" text="Apply" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

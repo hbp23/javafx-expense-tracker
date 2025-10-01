@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="transactionTableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/table.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.au.cpsc.module7.controller.RecordsTableViewController">
+  <columns>
+    <TableColumn fx:id="dateColumn" maxWidth="200.0" minWidth="-Infinity" prefWidth="200.0" text="Date" />
+    <TableColumn fx:id="categoryColumn" maxWidth="200.0" minWidth="-Infinity" prefWidth="200.0" text="Category" />
+      <TableColumn fx:id="amountColumn" maxWidth="200.0" minWidth="-Infinity" prefWidth="200.0" text="Amount" />
+  </columns>
+</TableView>

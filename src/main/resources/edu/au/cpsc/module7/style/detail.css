@@ -1,0 +1,13 @@
+.GridPane, .VBox {
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+Label {
+    -fx-text-fill: rgba(25, 25, 25);
+}
+
+TextField:focused, DatePicker:focused, ComboBox:focused, TextArea:focused {
+    -fx-border-color: green;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(35, 101, 41), 10, 0, 0, 0);
+}

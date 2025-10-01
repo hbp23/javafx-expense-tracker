@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@../style/tabledetail.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.au.cpsc.module7.controller.TableOfRecordsController">
+   <center>
+      <fx:include fx:id="recordsTableView" source="records-table-view.fxml" />
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <fx:include fx:id="recordsDetailView" source="records-detail-view.fxml" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="VBox">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="30.0" prefWidth="60.0" text="Add" />
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="30.0" prefWidth="60.0" text="Delete" />
+                  <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonAction" prefHeight="30.0" prefWidth="60.0" text="New" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

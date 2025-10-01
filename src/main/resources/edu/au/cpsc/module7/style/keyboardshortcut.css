@@ -1,0 +1,7 @@
+VBox {
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+Label {
+    -fx-text-fill: rgba(25, 25, 25);
+}

@@ -1,0 +1,27 @@
+VBox {
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+#close-btn, #apply-btn {
+    -fx-background-color: rgba(119, 178, 140);
+}
+
+#close-btn:hover, #apply-btn:hover {
+    -fx-background-color: rgba(190, 218, 200);
+}
+
+#close-btn:pressed, #apply-btn:pressed {
+    -fx-border-color: rgba(119, 178, 140);
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(119, 178, 140), 10, 0, 0, 0);
+}
+
+Label {
+    -fx-text-fill: rgba(25, 25, 25);
+}
+
+TextField:focused {
+    -fx-border-color: green;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(35, 101, 41), 10, 0, 0, 0);;
+}

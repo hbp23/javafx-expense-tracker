@@ -1,0 +1,17 @@
+.VBox {
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+Button {
+    -fx-background-color: rgba(119, 178, 140);
+}
+
+Button:hover {
+    -fx-background-color: rgba(190, 218, 200);
+}
+
+Button:pressed {
+    -fx-border-color: rgba(119, 178, 140);
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(119, 178, 140), 10, 0, 0, 0);
+}

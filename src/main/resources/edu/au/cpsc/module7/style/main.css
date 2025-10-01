@@ -1,0 +1,47 @@
+VBox {
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+.MenuBar {
+    -fx-background-color: rgba(119, 178, 140);
+}
+
+BorderPane {
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+BorderPane > Label {
+    -fx-text-fill: rgba(25, 25, 25);;
+}
+
+BorderPane > TextField {
+    -fx-border-color: green;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(35, 101, 41), 10, 0, 0, 0);;
+}
+
+BorderPane > ProgressIndicator {
+    -fx-accent: rgba(119, 178, 140, 1);
+}
+
+#leftButton {
+    -fx-graphic: url(../img/table.png);
+    -fx-content-display: top;
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+#rightButton {
+    -fx-graphic: url(../img/piechart.png);
+    -fx-content-display: top;
+    -fx-background-color: rgba(194, 197, 187);
+}
+
+#leftButton:hover, #rightButton:hover {
+    -fx-background-color: rgba(225, 227, 222);
+}
+
+#leftButton:pressed, #rightButton:pressed {
+    -fx-border-color: rgba(119, 178, 140);
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(119, 178, 140), 10, 0, 0, 0);
+}
