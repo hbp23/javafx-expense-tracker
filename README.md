@@ -21,7 +21,7 @@ A desktop application to track monthly expenses and budgets. Built with **JavaFX
    git clone https://github.com/hbp23/javafx-expense-tracker.git
    cd javafx-expense-tracker
    mvn clean javafx:run
-# or: mvn -Dprism.order=sw javafx:run (if no GPU)
+   # or: mvn -Dprism.order=sw javafx:run (if no GPU)
 
 ## Screenshots
 ![Main Dashboard and Expense Overview](docs/screenshots/MainDashboard-ExpenseOverview.png)
