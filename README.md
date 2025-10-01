@@ -1,13 +1,14 @@
 # JavaFX Expense Tracker
 
-A desktop application to track personal expenses. Built with **JavaFX** using an MVC design pattern.  
-Users can add, edit, and view transactions with categories, amounts, and dates. The app includes a chart view for spending patterns.
+A desktop application to track monthly expenses and budgets. Built with **JavaFX** using an MVC design pattern.  
 
 ## Features
-- Add, edit, and delete transactions
-- Categorize expenses
-- View spending summaries with charts
-- Persistent storage of transaction data
+- Add, edit, and delete transactions (date, category, amount, comment)  
+- Set and monitor monthly budget with progress indicator  
+- View last month’s balance, this month’s balance, and budget usage  
+- Table view with sorting and filtering  
+- Expense overview with interactive pie charts (current month + all time)  
+- Keyboard shortcuts for quick navigation  
 
 ## Tech Stack
 - Java 17+
